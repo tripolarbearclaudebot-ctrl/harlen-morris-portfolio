@@ -1,3 +1,25 @@
+// ── Demo URLs (update these when hosting goes live) ──
+const DEMO_URLS = {
+  glpi: 'http://localhost:8080',
+  glpiAssets: 'http://localhost:8080/front/computer.php',
+};
+
+// Wire up demo buttons
+document.addEventListener('DOMContentLoaded', () => {
+  const glpiLink = document.getElementById('glpi-link');
+  const assetsLink = document.getElementById('glpi-assets-link');
+  if (glpiLink) {
+    glpiLink.href = DEMO_URLS.glpi;
+    glpiLink.target = '_blank';
+    glpiLink.rel = 'noopener noreferrer';
+  }
+  if (assetsLink) {
+    assetsLink.href = DEMO_URLS.glpiAssets;
+    assetsLink.target = '_blank';
+    assetsLink.rel = 'noopener noreferrer';
+  }
+});
+
 // ── Smooth scroll for nav links ──
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {

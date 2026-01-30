@@ -1,7 +1,7 @@
 // ── Demo URLs (update these when hosting goes live) ──
 const DEMO_URLS = {
-  glpi: 'http://localhost:8080',
-  glpiAssets: 'http://localhost:8080/front/computer.php',
+  glpi: 'http://136.116.109.190',
+  glpiAssets: 'http://136.116.109.190/front/computer.php',
 };
 
 // Wire up demo buttons
